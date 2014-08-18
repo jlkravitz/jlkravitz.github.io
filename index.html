@@ -33,14 +33,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>
-		var initialHeaderHeight = $('header').height();
 		$('header > a').on('click', function() {
-			var links = $('header > ul');
-			if (links.is(':visible')) {
-				$('header').height(initialHeaderHeight);
-			} else {
-				$('header').height($('header').height() + $('header > ul').height());
-			}
 			$('header > ul').toggle();
 		});
 	</script>
