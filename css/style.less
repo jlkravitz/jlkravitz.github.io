@@ -7,7 +7,12 @@
 
 @black: lighten(black, 30%);
 @lightBlack: lighten(black, 70%);
-@backgroundColor: #E6EBFF;
+@gray: lighten(@lightBlack, 20%);
+@blue: #2E93FF;
+@green: #74FF5C;
+@red: #EF7452;
+@purple: #AF75FF;
+@backgroundColor: @blue;
 
 /* GLOBAL */
 
@@ -32,7 +37,7 @@ header {
 	width: 100%;
 	margin-bottom: 40px;
 	padding: 15px;
-	background: white;
+	background-color: white;
 	border-bottom: 1px solid @lightBlack;
 	.box-shadow(1px 1px 1px 0px rgba(0, 0, 0, 0.40));
 
@@ -119,7 +124,7 @@ header {
 }
 
 .content-box {
-	background-color: white;
+	background-color: @gray;
 	width: 600px;
 	margin: auto;
 	font-size: 30px;
