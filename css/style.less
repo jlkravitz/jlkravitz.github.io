@@ -30,6 +30,8 @@
 @purple: #AF75FF;
 @backgroundColor: lighten(@blue, 20%);
 
+@headerBorder: 1px solid @lightBlack;
+
 /* GLOBAL */
 
 * {
@@ -64,7 +66,7 @@ header {
 	margin-bottom: 40px;
 	padding: 15px;
 	background-color: white;
-	border-bottom: 1px solid @lightBlack;
+	border-bottom: @headerBorder;
 	.box-shadow(1px 1px 1px 0px rgba(0, 0, 0, 0.40));
 
 	ul {
@@ -143,7 +145,7 @@ header {
 			}
 
 			li {
-				border-top: 1px solid lighten(black, 50%);
+				border-bottom: @headerBorder;
 			}
 		}
 	}
