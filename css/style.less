@@ -28,7 +28,7 @@
 @green: #74FF5C;
 @red: #EF7452;
 @purple: #AF75FF;
-@backgroundColor: lighten(@blue, 20%);
+@backgroundColor: lighten(@blue, 40%);
 
 @headerBorder: 1px solid @lightBlack;
 
@@ -49,13 +49,15 @@ html, body {
 	width: 100%;
 	height: 100%;
 	z-index: -10;
-    .bg-img(
-    	'../img/stanford.jpg',
-    	@backgroundColor no-repeat center top fixed,
-    	cover
-    );
+ //    .bg-img(
+ //    	'../img/stanford.jpg',
+ //    	@backgroundColor no-repeat center top fixed,
+ //    	cover
+ //    );
     
-	.filter(blur(5px) saturate(10) grayscale(50%));
+	// .filter(blur(5px) saturate(10) grayscale(50%));
+	
+	background-color: @backgroundColor;
 }
 
 /* SITE */
@@ -157,7 +159,7 @@ header {
 	margin: auto;
 	font-size: 30px;
 	padding: 30px;
-	.box-shadow(1px 3px 20px 0px rgba(0, 0, 0, .3));
+	.box-shadow(0px .5px 3px 0px rgba(0, 0, 0, .2));
 
 	&:not(:first-child) {
 		margin-top: 15px;
