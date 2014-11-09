@@ -35,17 +35,59 @@
 	</section>
 
 	<section class="content-box">
-		<p>I'm a Computer Science major at Stanford University (class of 2018).</p>
+		<p>I'm a Computer Science student at Stanford University (class of 2018).</p>
 	</section>
 
 	<section class="content-box">
 		<p>I like music. I play jazz piano.</p>
 	</section>
 
+	<section class="content-box">
+		<p>In March of 2013, I became a tutor for <a href="https://codehs.com">CodeHS</a>.</p>
+		<p>Since the summer of 2013, I interned for the company remotely, then helped
+		with some projects throughout the school year.</p>
+		<p>In the summer of 2014, I worked
+		at their office in San Francisco for 9 weeks.</p>
+	</section>
+
+
+	<section class="content-box">
+		<p>Here are some of my personal projects:</p>
+		<ul>
+			<li>
+				<a href="/ap-lit-newspaper">Newspaper</a> for an english class.
+				It uses jquery, masonry, bootstrap js, and less.
+			</li>
+			<li>
+				Play snake on any webpage!
+				<a href="https://github.com/jlkravitz/snake-js">Make it a bookmarklet</a>
+				to play anywhere. Click <a href="play-snake">here</a> to play.
+			</li>
+			<li>
+				<a href="https://github.com/jlkravitz/tic-tac-toe">Tic-tac-toe</a> made using
+				the C++ Allegro graphics library.
+			</li>
+			<li>
+				<a href="https://github.com/jlkravitz/pySat">Scrape SAT vocabulary words</a>
+				from the SAT question of the day. (I'm not sure if this still works given the
+				transient nature of the web.)
+			</li>
+			<li>
+				<a href="https://github.com/jlkravitz/pyEval">Evaluate
+				mathematical expressions</a>  with the Shunting-Yard algorithm. 
+			</li>
+		</ul>
+	</section>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="snake.js"></script>
 	<script>
 		$('header > a').on('click', function() {
 			$('header > ul').slideToggle();
+		});
+		$('a[href="play-snake"]').on('click', function(e) {
+			Snake.run();
+			e.preventDefault();
 		});
 	</script>
 </body>
