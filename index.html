@@ -18,8 +18,8 @@
 	</script>
 </head>
 <body>
-	<div class="background"></div>
-	<header>
+	<!-- <div class="background"></div> -->
+<!-- 	<header>
 		<h1>Joshua Kravitz</h1>
 		
 		<a href="#">&#9776;</a>
@@ -28,9 +28,9 @@
 			<li><a href="https://github.com/jlkravitz/" target="_blank">Github</a></li>
 			<li><a href="resume.pdf">R&eacute;sum&eacute;</a></li>
 		</ul>
-	</header>
+	</header> -->
 
-	<section class="content-box">
+<!-- 	<section class="content-box">
 		<p>Hi, I'm Joshua.</p>
 	</section>
 
@@ -77,11 +77,29 @@
 				mathematical expressions</a>  with the Shunting-Yard algorithm. 
 			</li>
 		</ul>
-	</section>
+	</section> -->
+
+	<div class="block blue">
+		<h1>Joshua Kravitz</h1>
+		<ul>
+			<li>Computer science student at Stanford University</li>
+			<li>Jazz musician</li>
+			<li>Love making websites and solving hard problems</li>
+		</ul>
+		<a href="#"><img src="img/arrow_down_white.png" alt=""></a>
+	</div>
+	<div class="block green">
+		<h1>Joshua Kravitz</h1>
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="snake.js"></script>
 	<script>
+	$('a').click(function() {
+		$('html, body').animate({
+	        scrollTop: $('.green').offset().top
+	    }, 500);
+	})
 		$('header > a').on('click', function() {
 			$('header > ul').slideToggle();
 		});
