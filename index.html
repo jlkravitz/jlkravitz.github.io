@@ -79,25 +79,38 @@
 		</ul>
 	</section> -->
 
-	<div class="block blue">
+	<div class="block">
 		<h1>Joshua Kravitz</h1>
-		<ul>
+		<ul id="traits">
 			<li>Computer science student at Stanford University</li>
 			<li>Jazz musician</li>
 			<li>Love making websites and solving hard problems</li>
 		</ul>
-		<a href="#"><img src="img/arrow_down_white.png" alt=""></a>
-	</div>
-	<div class="block green">
-		<h1>Joshua Kravitz</h1>
-	</div>
+		<!-- <button>Play snake</button> -->
+		<ul id="social">
+			<li><a href="https://github.com/jlkravitz"><img src="img/GitHub-Mark-64px.png" alt=""></a></li>
+			<li><a href="mailto:jlkravitz@gmail.com"><img src="img/mail.png" alt=""></a></li>
+			<li><a href="https://linkedin.com/in/jlkravitz"><img src="img/linkedin.png" alt=""></a></li>
+		</ul>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!-- <a href="#"><img src="img/arrow_down_white.png" alt=""></a> -->
+	</div>
+<!-- 	<div class="block">
+		<h1>Projects</h1>
+		<ul>
+			<li>First project</li>
+			<li>Second</li>
+			<li>third</li>
+			<li>fourth</li>
+		</ul>
+	</div> -->
+
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="snake.js"></script>
 	<script>
 	$('a').click(function() {
 		$('html, body').animate({
-	        scrollTop: $('.green').offset().top
+	        scrollTop: $(this).parent('.block').next().offset().top
 	    }, 500);
 	})
 		$('header > a').on('click', function() {
@@ -107,6 +120,6 @@
 			Snake.run();
 			e.preventDefault();
 		});
-	</script>
+	</script>-->
 </body>
 </html>
